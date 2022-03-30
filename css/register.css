@@ -1,0 +1,85 @@
+#box {
+    background-color: antiquewhite;
+    position: absolute;
+    left: 35%;
+    top: 20%;
+    width: 450px;
+    height: 750px;
+    border-radius: 30px;
+}
+
+h2 {
+    text-align: center;
+    position: relative;
+    right: 30px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.icon {
+    position: relative;
+    top: 10px;
+    left: 50px;
+    height: 30px;
+    width: 30px;
+}
+
+#eye {
+    position: relative;
+    bottom: 35px;
+    left: 290px;
+    height: 30px;
+    width: 30px;
+}
+
+.input {
+    background-color: aquamarine;
+    line-height: 37px;
+    font-size: 20px;
+    border-radius: 15px;
+    text-indent: 8px;
+    padding-left: 50px;
+    margin-top: 20px;
+}
+
+.sex {
+    background-color: aquamarine;
+    height: 37px;
+    width: 295px;
+    margin-top: 20px;
+    margin-left: 39px;
+    font-size: 25px;
+    border-radius: 15px;
+    border: 1px solid;
+}
+
+.info {
+    position: absolute;
+    display: block;
+    padding-left: 50px;
+    margin: 0;
+    font-size: smaller;
+    color: red;
+}
+
+.button {
+    text-align: center;
+    background-color: deepskyblue;
+    color: black;
+    width: 200px;
+    height: 35px;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    left: 70px;
+}
+
+#preview {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    right: 50px;
+    margin-top: 10px;
+}
