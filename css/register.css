@@ -7,6 +7,9 @@
     height: 750px;
     border-radius: 30px;
 }
+#date {
+    display: none;
+}
 
 h2 {
     text-align: center;

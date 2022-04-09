@@ -5,16 +5,44 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
-    <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+
+    <style>
+        span {
+            background-color: red;
+        }
+
+        div {
+            background-color: red;
+        }
+    </style>
 </head>
 
 <body>
-    <div id="rightBody">
-        <tr>
-            <td>$row[0]</td>
-            <td>$row[1]</td>$row[2]<td>$row[3]</td>
-        </tr>
+
+    <span>
+        22222222
+    </span>
+    <p>123132</p>
+    <button>点击</button>
+
     </div>
 </body>
+
+<script src="./getTime.js" type="module">
+
+    let span = document.querySelector('span');
+    let p = document.querySelector('p');
+    let btn = document.querySelector('button');
+
+    console.log('hi');
+
+    p.innerHTML = 'what the fuck'
+    console.log(p.innerHTML);
+    span.innerHTML = p.innerHTML;
+    console.log(span.innerHTML);
+
+
+</script>
+
 
 </html>

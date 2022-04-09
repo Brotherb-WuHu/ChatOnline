@@ -23,6 +23,7 @@ $row=mysqli_fetch_assoc($result);
 
 
 
+
 if (empty($row)) {
     $_SESSION['is_login'] = false;
     $_SESSION['errorinfo'] = '登录失败哦，请重新检查账号密码';
@@ -33,10 +34,10 @@ if (empty($row)) {
     $_SESSION['user1_login'] = true;
 
     // 将当前登录用户的数据插入表 online
-    $sql1="INSERT INTO online SELECT * FROM user where name = '123'";
+    $sql1="INSERT INTO online SELECT * FROM user where name = '$name'";
     mysqli_query($conn, $sql1);
 
 
     
-    // header('Location:backend.php');
+    header('Location:backend.php');
 }

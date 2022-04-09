@@ -1,12 +1,7 @@
 <?php
-    // 连接数据库
-    // $servername = "localhost";
-    // $username = "root";
-    // $password = "123456";
-    // $conn = mysqli_connect($servername, $username, $password);
-    // mysqli_select_db($conn, "users");
-    // mysqli_set_charset($conn, "utf8");
     session_start();
+
+    // 连接数据库
     require_once('database.php');
 
     // 信息获取
@@ -16,9 +11,10 @@
     $sex=$_POST["sex"];
 
     // 查询名字是否与数据库中的一致
-    $sql="select * from name where name={$name}'";
+    $sql="select * from user where name = '{$name}'";
     $result=mysqli_query($conn, $sql);
     $row=mysqli_fetch_assoc($result);
+
     if (empty($row)) {
         $isrepeat= false;
     } else {
@@ -39,7 +35,6 @@
     } else {
         $sql = "INSERT INTO user (acc,psw,name,sex,imgType,img)
         VALUES ('$acc','$psw','$name','$sex','$imgType','$img')";
-    
         $result=mysqli_query($conn, $sql);
 
         if ($result) {
